@@ -7,4 +7,5 @@ COPY yarn.lock ./
 RUN yarn install
 COPY src src
 COPY public public
-CMD npm run start
+
+CMD ["yarn", "run", "start"]
