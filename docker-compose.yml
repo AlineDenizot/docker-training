@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: "3.9"
+services:
+    server:
+        build: ./server
+        image: express-docker
+        ports: 
+            - 5055:5000
+    mongodb:
+        image: mongo
+
